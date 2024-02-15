@@ -31,6 +31,12 @@ header {
     font-size: 1.8em;
     font-weight: 500;
 }
+code {
+    background-color: var(--text-color);
+    color: var(--accent-color);
+    padding: 1.2%;
+    border-radius: 8px;
+}
 #navbar {
     overflow-y: auto;
     overflow-x: hidden;
