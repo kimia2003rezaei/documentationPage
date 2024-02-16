@@ -79,22 +79,18 @@
     </main>
     <script>
         function openNav() {
-            if (window.innerWidth < 550) {
-                document.getElementById("navbar").classList.add("mobile-navbar");
-                document.querySelector("html").style.backgroundColor = "var(--lighter-gray)";
-            }
+            document.getElementById("navbar").classList.add("mobile-navbar");
+            document.querySelector("html").style.backgroundColor = "var(--lighter-gray)";
             document.getElementById("navbar").style.display = "block";
-            document.getElementById("main-doc").style.left = "35%";
             document.getElementById("sidebar-btn").setAttribute("onclick", "closeNav()");
         }
         function closeNav() {
-            if (window.innerWidth < 550) {
-                document.getElementById("navbar").classList.remove("mobile-navbar");
-                document.querySelector("html").style.backgroundColor = "var(--background-color)";
-            }
-                document.getElementById("navbar").style.display = "none";
-                document.getElementById("main-doc").style.left = "3%";
-                document.getElementById("sidebar-btn").setAttribute("onclick", "openNav()");
+            document.getElementById("navbar").classList.remove("mobile-navbar");
+            document.querySelector("html").style.backgroundColor = "var(--background-color)";
+
+            document.getElementById("navbar").style.display = "none";
+            document.getElementById("main-doc").style.left = "3%";
+            document.getElementById("sidebar-btn").setAttribute("onclick", "openNav()");
 
         }
         document.onscroll = () => {

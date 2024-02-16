@@ -92,7 +92,15 @@ code {
 #sidebar-btn:hover {
     background-color: var(--accent-color);
 }
+@media (max-width: 930px) {
+    #main-doc {
+        padding-left: 2%;
+    }
+}
 @media (max-width: 800px) {
+    #main-doc {
+        padding-left: 0;
+    }
     @keyframes fadeInAnimation {
         0% {
             opacity: 0;
@@ -124,8 +132,6 @@ code {
     #main-doc header {
         padding-top: 15%;
     }
-}
-@media (max-width: 550px) {
     #navbar {
         width: fit-content;
         top: 8%;
@@ -134,5 +140,10 @@ code {
         z-index: 1;
         background-color: var(--background-color);
         height: 100%;
+    }
+}
+@media (max-width: 450px) {
+    #navbar {
+        top: 7%;
     }
 }
